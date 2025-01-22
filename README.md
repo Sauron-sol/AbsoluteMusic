@@ -1,93 +1,93 @@
-# Absolute - Comparaison de Performances Musicales
+# Absolute - Music Performance Comparison
 
-Absolute est une application web permettant aux musiciens de comparer leurs performances musicales en vidéo. Elle offre une interface intuitive pour uploader, visualiser et comparer des vidéos côte à côte.
+Absolute is a web application that allows musicians to compare their musical performances in video. It offers an intuitive interface to upload, view, and compare videos.
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
-- Upload de vidéos musicales
-- Visualisation côte à côte pour comparaison
-- Gestion de bibliothèque de vidéos
-- Interface utilisateur moderne et réactive
-- Support de différents formats vidéo (MP4, MOV, WebM)
+- Upload musical videos
+- Side-by-side video comparison
+- Video library management
+- Modern and responsive user interface
+- Support for various video formats (MP4, MOV, WebM)
 
-## 🛠 Technologies Utilisées
+## 🛠 Technologies Used
 
 ### Frontend
-- React avec TypeScript
-- Vite pour le build
-- TailwindCSS pour le style
-- Framer Motion pour les animations
-- React Query pour la gestion d'état
-- Material-UI pour les composants
+- React with TypeScript
+- Vite for building
+- TailwindCSS for styling
+- Framer Motion for animations
+- React Query for state management
+- Material-UI for components
 
 ### Backend
-- NestJS avec TypeScript
-- SQLite pour la base de données
-- TypeORM pour l'ORM
-- Multer pour la gestion des fichiers
+- NestJS with TypeScript
+- SQLite for the database
+- TypeORM for ORM
+- Multer for file handling
 
 ### Infrastructure
 - Docker & Docker Compose
-- Nginx comme reverse proxy
-- Multi-stage builds pour l'optimisation
+- Nginx as reverse proxy
+- Multi-stage builds for optimization
 
 ## 🚀 Installation
 
-1. Cloner le repository :
-\`\`\`bash
-git clone [URL_DU_REPO]
-cd absolute
-\`\`\`
+1. Clone the repository:
+   ```bash
+   git clone [REPO_URL]
+   cd absolute
+   ```
 
-2. Lancer avec Docker :
-\`\`\`bash
-docker-compose up --build
-\`\`\`
+2. Start with Docker:
+   ```bash
+   docker-compose up --build
+   ```
 
-L'application sera accessible sur :
-- Frontend : http://localhost
-- Backend : http://localhost:3000
+The application will be accessible at:
+- Frontend: http://localhost
+- Backend: http://localhost:3000
 
-## 📁 Structure du Projet
+## 📁 Project Structure
 
-\`\`\`
+```
 absolute/
-├── frontend/          # Application React
+├── frontend/          # React application
 │   ├── src/
 │   ├── Dockerfile
 │   └── nginx.conf
-├── backend/           # API NestJS
+├── backend/           # NestJS API
 │   ├── src/
 │   ├── Dockerfile
-│   └── uploads/       # Dossier des vidéos
+│   └── uploads/       # Video folder
 └── docker-compose.yml
-\`\`\`
+```
 
-## 💻 Développement Local
+## 💻 Local Development
 
 ### Frontend
-\`\`\`bash
+```bash
 cd frontend
 npm install
 npm run dev
-\`\`\`
+```
 
 ### Backend
-\`\`\`bash
+```bash
 cd backend
 npm install
 npm run start:dev
-\`\`\`
+```
 
 ## 📝 Configuration
 
-- Les vidéos sont stockées dans `backend/uploads/`
-- La base de données SQLite est dans `backend/db.sqlite`
-- La configuration nginx est dans `frontend/nginx.conf`
+- Videos are stored in `backend/uploads/`
+- SQLite database is in `backend/db.sqlite`
+- Nginx configuration is in `frontend/nginx.conf`
 
-## 🔒 Sécurité
+## 🔒 Security
 
-- Validation des fichiers uploadés
-- Gestion des CORS
-- Limitation de la taille des fichiers
-- Formats de fichiers restreints
+- Validation of uploaded files
+- CORS management
+- File size limitation
+- Restricted file formats
